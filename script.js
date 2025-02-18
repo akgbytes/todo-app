@@ -85,7 +85,7 @@ function rendertask(tasks) {
       controlsDiv.appendChild(saveIcon);
 
       saveIcon.addEventListener("click", () => {
-        let modifiedText = taskNameDiv.innerHTML.trim();
+        let modifiedText = taskNameDiv.innerText.trim();
         taskArray.splice(currentIndex, 1, modifiedText);
         taskNameDiv.contentEditable = false;
         taskNameDiv.innerText = modifiedText;
