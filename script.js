@@ -101,6 +101,11 @@ function rendertask(tasks) {
 
       saveIcon.addEventListener("click", () => {
         let modifiedText = taskNameDiv.innerText.trim();
+        // alert if input is empty
+        if (modifiedText === "") {
+          alert("Enter your task first");
+          return;
+        }
 
         taskArray.splice(currentIndex, 1, {
           task: modifiedText,
