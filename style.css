@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  font-family: "Outfit", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#heading {
+  font-size: 48px;
+}
+
+.task-input-wrapper {
+  margin-top: 20px;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#task-input {
+  padding: 8px 16px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+#task-input::placeholder {
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.task-actions {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  margin: 8px 0;
+  padding: 8px 12px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-task-btn {
+  background-color: #305cde;
+}
+
+#clear-tasks-btn {
+  background-color: #e74c3c;
+}
+
+#tasks-container {
+  background-color: #f3f4f6;
+  min-height: 400px;
+  padding: 10px 20px;
+  width: 35vw;
+  margin-top: 20px;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+#tasks-container li {
+  background-color: #f9fafb;
+  margin: 8px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.task-details {
+  margin-left: 10px;
+  padding: 4px 0;
+}
+.task-name {
+  width: 20vw;
+  padding: 4px;
+  font-size: 22px;
+}
+.task-name:focus {
+  border: 1px solid black;
+}
+.task-time {
+  padding-left: 4px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.task-status-icon {
+  /* before click */
+  border: 1px solid #808080;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  /* after click */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-status-icon img {
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+}
+
+.task-controls {
+  display: flex;
+  gap: 10px;
+  margin-right: 5px;
+}
+.task-controls img {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
